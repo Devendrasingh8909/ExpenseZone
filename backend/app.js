@@ -14,7 +14,7 @@ app.use(cors(
     {
         origin: ["https://expense-zone-frontend.vercel.app/"],
         methods: ["POST", "GET"],
-        credentials: true
+        credentials: false
     }
 ));
 
