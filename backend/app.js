@@ -5,7 +5,7 @@ const {readdirSync} = require('fs')
 const app = express()
 app.use(cors(
     {
-        origin: ["https://expense-zone-backend.vercel.app/"],
+        origin: ["https://expense-zone-frontend.vercel.app/"],
         methods: ["POST", "GET"],
         credentials: true
     }
