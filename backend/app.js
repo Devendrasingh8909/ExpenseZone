@@ -3,7 +3,13 @@ const cors = require('cors');
 const { db } = require('./db/db');
 const {readdirSync} = require('fs')
 const app = express()
-
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-frontend.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 require('dotenv').config()
 
 const PORT = process.env.PORT
